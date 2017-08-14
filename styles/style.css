@@ -1,0 +1,203 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    background-color: black;
+    color: white;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    color: white;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* font imports */
+
+/*
+Lovato light font obtained from fontspring.com,
+originally created by Philatype
+See https://www.fontspring.com/fonts/philatype/lovato
+Josefin slab bold obtained from fontsquirrel.com,
+originally created by Typemade
+See https://www.fontsquirrel.com/fonts/josefin-slab
+*/
+/*
+@font-face {
+    font-family: 'lovatolight';
+    src: url('fonts/Lovato-Light-webfont.eot');
+    src: url('fonts/Lovato-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Lovato-Light-webfont.woff2') format('woff2'),
+    url('fonts/Lovato-Light-webfont.woff') format('woff'),
+    url('fonts/Lovato-Light-webfont.ttf') format('truetype'),
+    url('fonts/Lovato-Light-webfont.svg#lovatolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin_slabbold';
+    src: url('fonts/josefinslab-bold-webfont.eot');
+    src: url('fonts/josefinslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/josefinslab-bold-webfont.woff2') format('woff2'),
+    url('fonts/josefinslab-bold-webfont.woff') format('woff'),
+    url('fonts/josefinslab-bold-webfont.ttf') format('truetype'),
+    url('fonts/josefinslab-bold-webfont.svg#josefin_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+/* typography stuff */
+
+html {
+    font-family: lovatolight, serif;
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-family: "Times New Roman", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h2 + p {
+    text-indent: 20px;
+}
+
+p, li {
+    font-size: 1.6rem;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+/* Link styling */
+/*
+a {
+    outline: none;
+}
+
+a[href*="http"] {
+    padding-right: 19px;
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+}
+
+a:link, a:visited {
+    color: #000000;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: transparent;
+    text-shadow: 0px 0px 1px #f00,
+    0px 0px 2px #f00,
+    0px 0px 3px black,
+    0px 0px 4px black;
+}
+*/
+/* lists: extra margin top and bottom to make it
+always have the same spacing as with paragraphs */
+
+ul, ol {
+    margin: 1.6rem 0;
+    color: white;
+
+}
+
+ul {
+    list-style-type: square;
+    color: white;
+
+}
+
+ol {
+    list-style-type: lower-latin;
+    color: white;
+
+}
+
+/* nav menu */
+
+nav ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+    color: white;
+}
+
+nav li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+nav li a:focus, nav li a:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+nav li a:active {
+    color: #ffffff;
+    background: #000000;
+}
