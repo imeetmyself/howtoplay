@@ -111,10 +111,12 @@ h2 + p {
 }
 
 p, li {
+    font-family: Arial, sans-serif;
+    font-style: italic;
     font-size: 1.6rem;
     line-height: 1rem;
     letter-spacing: 0.5px;
-    word-spacing: 3px;
+    word-spacing: 2px;
     text-align: center;
 }
 
